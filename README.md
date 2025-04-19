@@ -1,72 +1,87 @@
-🔍 Cypress Automation Project: Mentoring Platform
+# 🔍 Cypress Automation Project: Mentoring Platform
 
-Welcome to the automation test project for the Mentoring Platform built using Cypress! This repository contains automated test cases covering critical user flows to ensure the stability and quality of the application.
+Welcome to the automation test project for the **Mentoring Platform** built using [Cypress](https://www.cypress.io/)! This repository contains automated test cases covering critical user flows to ensure the stability and quality of the application.
 
-🚀 Tech Stack
+---
 
-✅ Cypress
+## 🚀 Tech Stack
 
-💻 JavaScript
+- ✅ [Cypress](https://www.cypress.io/)
+- 💻 JavaScript
+- 📦 Node.js
+- 🧪 Mocha & Chai (built-in with Cypress)
 
-📦 Node.js
+---
 
-🧪 Mocha & Chai (built-in with Cypress)
-
-🎯 High-Level Test Scenarios
+## 🎯 High-Level Test Scenarios
 
 This section outlines the key scenarios that are being automated. Each scenario represents a different user flow or condition to ensure the application behaves as expected.
 
-📝 Register
+- 📝 **Register**
+- 🔐 **Login**
+- 🔍 **Search for a Mentor**
+- 🗕️ **Make a Schedule**
+- 🧾 **View Mentoring History**
+- 🚪 **Logout**
 
-🔐 Login
+> 💡 These are high-level flows. Detailed test cases and steps can be found in the test files under `/cypress/e2e/`.
 
-🔍 Search for a Mentor
+---
 
-🗕️ Make a Schedule
+## 📁 Project Structure
 
-📤 Send a Message
-
-🧾 View Mentoring History
-
-🚪 Logout
-
-💡 These are high-level flows. Detailed test cases and steps can be found in the test files under /cypress/e2e/.
-
-📁 Project Structure
-
+```
 ├── cypress
-│ ├── e2e
-│ │ ├── register.cy.js
-│ │ ├── login.cy.js
-│ │ ├── searchMentor.cy.js
-│ │ └── schedule.cy.js
-│ └── support
-│ └── commands.js
+│   ├── e2e
+│   │   ├── register.cy.js
+│   │   ├── login.cy.js
+│   │   ├── searchMentor.cy.js
+│   │   └── schedule.cy.js
+│   └── support
+│       └── commands.js
 ├── cypress.config.js
 └── README.md
+```
 
-▶️ How to Run Tests
+---
 
-Install dependencies
+## ▶️ How to Run Tests
 
-npm install
+1. **Install dependencies**
 
-Open Cypress Test Runner
+   ```bash
+   npm install
+   ```
 
-npx cypress open
+2. **Open Cypress Test Runner**
 
-Run tests in CLI (headless mode)
+   ```bash
+   npx cypress open
+   ```
 
-npx cypress run
+3. **Run tests in CLI (headless mode)**
 
-📸 Screenshots & Videos
+   ```bash
+   npx cypress run
+   ```
 
-Cypress automatically captures screenshots and videos for failing tests.Check the cypress/screenshots/ and cypress/videos/ folders after running tests.
+---
 
-✍️ Author
+## 📸 Screenshots & Videos
 
-Your NameQA Engineer | Automation EnthusiastGitHub | LinkedIn
+Cypress automatically captures screenshots and videos for failing tests.\
+Check the `cypress/screenshots/` and `cypress/videos/` folders after running tests.
 
-📃 License
+---
+
+## ✍️ Author
+
+- **Mohamad Ismi Azis**\
+  QA Engineer | Automation Enthusiast\
+  [GitHub](https://github.com/ismiazis96) | [LinkedIn](https://linkedin.com/in/ismiazis96)
+
+---
+
+## 📃 License
 
 This project is licensed under the MIT License.
