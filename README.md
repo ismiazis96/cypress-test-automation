@@ -65,6 +65,18 @@ This section outlines the key scenarios that are being automated. Each scenario 
    npx cypress run
    ```
 
+4. **Install package Reporting mochawesome**
+
+   ```bash
+   npm i mochawesome
+   ```
+
+5. **Run Test with Reporting mochawesome**
+
+   ```bash
+   npx cypress run --reporter mochawesome
+   ```
+
 ---
 
 ## 📸 Screenshots & Videos

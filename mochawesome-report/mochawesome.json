@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-20T10:10:16.473Z",
+    "end": "2025-04-20T10:10:39.882Z",
+    "duration": 23409,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "db1cd802-d367-4383-a32b-d78507a7ddaa",
+      "title": "",
+      "fullFile": "cypress\\e2e\\searchMentor.cy.js",
+      "file": "cypress\\e2e\\searchMentor.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04673e05-c3af-468c-89b0-950f34806411",
+          "title": "Search Mentoring Testcase",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "search mentoring is valid data (positive)",
+              "fullTitle": "Search Mentoring Testcase search mentoring is valid data (positive)",
+              "timedOut": null,
+              "duration": 12665,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let searchMentorValid = 'Microsoft';\ncy.get('#searchMentor').type(`${searchMentorValid}{enter}`);\ncy.get(':nth-child(2) > .\\\\!leading-\\\\[1\\\\.5\\\\]').should('have.text', searchMentorValid);",
+              "err": {},
+              "uuid": "d2ea6423-6fc6-4d95-8225-6f0e0efd1363",
+              "parentUUID": "04673e05-c3af-468c-89b0-950f34806411",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "search mentoring is invalid data (negative)",
+              "fullTitle": "Search Mentoring Testcase search mentoring is invalid data (negative)",
+              "timedOut": null,
+              "duration": 10399,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let searchMentorInvalid = 'XXX';\ncy.get('#searchMentor').clear('');\ncy.get('#searchMentor').type(`${searchMentorInvalid}{enter}`);\ncy.get('.mt-2').should('contain', 'Coba cari kata kunci lain, sementara itu ');",
+              "err": {},
+              "uuid": "1c810146-baba-412f-a245-6b39744e135f",
+              "parentUUID": "04673e05-c3af-468c-89b0-950f34806411",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d2ea6423-6fc6-4d95-8225-6f0e0efd1363",
+            "1c810146-baba-412f-a245-6b39744e135f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23064,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
